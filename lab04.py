@@ -1,3 +1,8 @@
+'''
+Team Lets Face It
+Patrick Swick, Dae Eun Yim, Juan Zavala, Anthony Toma
+CSE 5408 Spring 2021 Lab 04
+'''
 
 def prime_number():
     prime = int(input("Enter a number \n"))
