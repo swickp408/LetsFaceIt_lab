@@ -1,3 +1,11 @@
+
+def reverse_string(x):
+    return x[::-1]
+
+y = input("Input a string \n")
+z = reverse_string(y)
+print(z)
+
 '''
 Team Lets Face It
 Patrick Swick, Dae Eun Yim, Juan Zavala, Anthony Toma
