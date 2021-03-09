@@ -1,10 +1,36 @@
 
+def Validation():
+
+    alphabets = 0
+    digit = 0
+    special = 0
+
+    password = input("Enter your Password: ")
+    
+    if len(pw) < 7:
+        print('Pw must be longer than 7')
+
+    for i in range(len(pw)):
+        if(pw[i].isalpha()):
+            alphabets = alphabets + 1
+        elif(pw[i].isdigit()):
+            digit = digit + 1
+        else:
+            special = special + 1
+    
+    if (digit + special == 2):
+        print('Password Valid')
+        return True
+    else:
+        print('Password not Valid')
+        return False
+
 def reverse_string(x):
     return x[::-1]
 
-y = input("Input a string \n")
-z = reverse_string(y)
-print(z)
+    y = input("Input a string \n")
+    z = reverse_string(y)
+    print(z)
 
 '''
 Team Lets Face It
@@ -49,3 +75,4 @@ def fibonacci():
             count.append(fib_c)
             
     return count
+
